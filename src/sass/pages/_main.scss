@@ -1,0 +1,32 @@
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .container {
+    background-color: $mainWhite;
+    margin: 50px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 10px;
+    width: 100vh;
+    height: 70vh;
+    align-self: center;
+    overflow: hidden;
+
+    .profiles {
+      height: inherit;
+      padding-right: 15px;
+
+      &:hover {
+        overflow-y: scroll;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .loading {
+    align-self: center;
+  }
+}
