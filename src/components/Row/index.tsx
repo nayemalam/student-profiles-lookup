@@ -46,7 +46,7 @@ const Row = ({ profile, profiles, setStudentProfiles }: Props) => {
             if (studentProfile.id === profile.id) {
               return {
                 ...studentProfile,
-                tags: [...matchedProfile.tags, ...filteredTags],
+                tags: Array.from(new Set([...matchedProfile.tags, tag])),
               };
             }
             return studentProfile;

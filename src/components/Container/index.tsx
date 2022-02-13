@@ -74,7 +74,6 @@ const Container = ({ profiles, setStudentProfiles }: Props) => {
       tagRef.current &&
       filteredQueryByName(inputRef.current.value).length > 0 &&
       filteredQueryByTag(tagRef.current.value).length > 0
-      // check if filteredQueryByName and filteredQueryByTag are the same
     ) {
       let result = filteredQueryByName(inputRef.current.value).filter(o1 => {
         if (tagRef.current) {

@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Student Profiles Search ⚡
+
+\*\*\* This project was only tested on the Google Chrome browser
+
+## Steps to reproduce:
+
+- #### `cd student-profiles`
+- #### `npm install`
+- #### `npm start`
+
+  - #### Development Mode:
+
+    - `npm start` <br/>
+      Runs the app in the development mode. <br/>
+      Open http://localhost:3000 to view it in the browser. <br/>
+      The page will reload if you make edits.
+
+  - #### Production Mode:
+    - `npm run build`
+    - `npm run serve` <br/>
+      OR <br />
+    - `npm run bns` (this will do both build and serve) <br/>
+      Runs the app in the production mode. <br/>
+      Open http://localhost:5000 to view it in the browser. <br/>
+      The page will not reload if you make edits.
+
+#
+
+#### What does this do?
+
+- [x] Fetches a list of student profiles via `https://api.hatchways.io/assessment/students`
+- [x] Display search results in a list
+- [x] View test scores with a toggle on top right
+- [x] Users can add a tag for a specific student profile
+- [x] Users can search by:
+  - [x] student name
+  - [x] tags associated to any student
+  - [x] both
+
+#
+
+#### Additional features:
+
+- Notifications for adding duplicate tags
+- Notifications for error fetching via API
+- Show scrollbar only on hover
+- Typescript + SASS support
+
+#
+
+#### Note:
+
+- There is no state or db persistence, so if the user refreshes the page, the page will unmount and the updated will be cleared.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
